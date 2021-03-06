@@ -16,9 +16,9 @@ class Time:
         self.seconds = seconds
 
     def get_time(self):
-        # return f"{self.hours}:{self.minutes}:{self.seconds}"
-        date = f"{self.hours}:{self.minutes}:{self.seconds}"
-        date.strftime("%{self.hours}:%m:%d")
+        return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"
+        # date = f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"
+        # date.strftime("%{self.hours}:%m:%d")
 
     def next_second(self):
         self.seconds += 1

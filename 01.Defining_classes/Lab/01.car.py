@@ -8,10 +8,6 @@ class Car:
         return f"This is {self.name} {self.model} with engine {self.engine}"
 
 
-car = Car(
-    "Kia",
-    "Rio",
-    "1.3L B3 I4"
-)
-car_info = car.get_info()
-print(car_info)
+my_car = Car("Kia", "Rio", "1.3L B3 I4")
+print(my_car.get_info())
+
